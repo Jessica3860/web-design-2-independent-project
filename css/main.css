@@ -11,6 +11,15 @@ html {
 font-family: 'Oleo Script', cursive;
 font-family: 'Poppins', sans-serif;
 
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 li {
   display: flex;
   align-items: center;
@@ -223,3 +232,23 @@ footer .icons {
 }
 
 /* footer style end */
+
+article {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: .2rem solid #fcd732;
+  background-color: #fcd732;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 6em;
+  margin: 1rem;
+}
+
+article img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
