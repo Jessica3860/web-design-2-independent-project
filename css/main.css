@@ -3,68 +3,59 @@ html {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 font-family: 'Oleo Script', cursive;
 font-family: 'Poppins', sans-serif;
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #4e4255;
 }
 
 img {
   display: block;
-  width: 100%
+  width: 100%;
 }
+
 li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 1.5rem;
   flex-direction: row;
 }
-
-
 /* header code */
-
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@400;700&display=swap');
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
 	margin: 0;
 	background: #fff;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 }
-
 .content {
   height: 1000px;
   background-color: #fff;
   display: grid;
   place-items: center;
 }
-
-/* navigation */
-
+/* navigation styles start here */
 header {
   background: #6a916e;
   text-align: center;
   width: 100%;
 }
-
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -74,7 +65,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -85,21 +75,17 @@ header {
   border-radius: 2px;
   position: relative;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
-
 .nav-toggle-label span::before {
   bottom: 7px;
 }
-
 .nav-toggle-label span::after {
   top: 7px;
 }
-
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px #6a916e;
 }
@@ -150,89 +136,107 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+
+/* banner*/
 .honeycomb {
-  /* background-color: #f80; */
-  background: #f80 url("../images/honeycomb.png") no-repeat center center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6rem;
+}
+
+.honeycomb img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .honeycomb h2 {
-  margin: 3em auto;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  color: #fffabc;
+  font-family: 'Oleo Script', cursive;
+  background-color: #ec9222;
+  border: none;
+  padding: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Oleo Script', cursive;
+  font-size: 2rem;
+  margin: 3rem;
+  border-radius: 1rem;
 }
 
 
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
+/* main */
 
-  header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
 
-    .logo {
-      grid-column: 2 / 3;
-    }
-
-    .honeycomb {
-      grid-column: 1/-1;
-      grid-row: 2;
-    }
-
-    .honeycomb h2 {
-      margin: 3em auto;
-    }
-
-  .honeycomb h2 {
-    margin: 2em auto;
-  }
-
-  nav {
-    all: unset; /*takes all styling off of the nav */
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-   nav a:hover::before {
-    transform: scale(1,1);
-  }
+/* cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-/* navigation styles and  finish here */
+article {
+  align-items: center;
+  border: .2rem solid #fcd732;
+  background-color: #fcd732;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+article img {
+  align-items: center;
+  padding: 1rem;
+}
+
+article h3 {
+  grid-column: 1/-1;
+  grid-row: 2;
+  align-self: center;
+}
+
+/*donations*/
+
+.donations {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.donations a {
+  background-color:#ec9222;
+  border: none;
+  color: #fffabc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Oleo Script', cursive;
+  font-size: 2rem;
+  margin: 3rem;
+  border-radius: 1rem;
+}
+
+.donations a:hover {
+  background: #fffabc;
+  color: #ec9222;
+}
 
 /* footer style*/
 footer {
   background: #6a916e;
 }
-
 footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
-
 footer li {
   margin-bottom: 1em;
   margin-left: 1em;
 }
-
 footer a {
   color: #fffabc;
   font-weight: bold;
@@ -240,7 +244,6 @@ footer a {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
-
 footer .icons {
   display: flex;
   justify-content: center;
@@ -248,22 +251,51 @@ footer .icons {
 
 /* footer style end */
 
-article {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  border: .2rem solid #fcd732;
-  background-color: #fcd732;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  padding: 6em;
-  margin: 1rem;
-}
 
-article img {
-  height: auto;
-  width: auto;
-  max-width: 300px;
-  max-height: 300px;
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .logo {
+    grid-column: 2 / 3;
+  }
+  nav {
+    all: unset; /*takes all styling off of the nav */
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+   nav a:hover::before {
+    transform: scale(1,1);
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .donations {
+    grid-template-columns: 1fr 1fr;
 }
+/* navigation styles and  finish here */
