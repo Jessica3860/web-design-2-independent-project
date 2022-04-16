@@ -150,7 +150,7 @@ nav a:hover {
   grid-column: 1/-1;
 }
 
-.honeycomb h2, h1 {
+.honeycomb h2 {
   font-weight: bold;
   z-index: 1;
   text-align: center;
@@ -160,10 +160,30 @@ nav a:hover {
   border: none;
   text-decoration: none;
   display: inline-block;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
+  font-size: 1rem;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  grid-row: 1;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+}
+
+.honeycomb h1 {
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-family: 'Oleo Script', cursive;
+  background-color: #ec9222;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: .5rem;
   grid-row: 1;
   grid-column: 1/-1;
   align-self: center;
@@ -202,13 +222,13 @@ article h3 {
   background-color:#ec9222;
   border: none;
   color: #fff;
-  padding: 15px 32px;
+  padding: .5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: .75rem;
   margin: .5rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 /*donations*/
@@ -222,7 +242,7 @@ article h3 {
   background-color:#ec9222;
   border: none;
   color: #fffabc;
-  padding: 15px 32px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -236,6 +256,31 @@ article h3 {
   background: #fffabc;
   color: #ec9222;
 }
+
+/* locations page coding */
+.locations {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.locations h2 {
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-family: 'Oleo Script', cursive;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  grid-row: 1;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-self: center;
+}
+
+
+/* about page coding */
+
 
 .donations p {
   padding: 1rem;
@@ -277,11 +322,8 @@ div .icons {
   margin-bottom: 0;
 }
 
+
 /* footer style end */
-
-
-
-
 
 
 
@@ -290,6 +332,40 @@ div .icons {
   .nav-toggle-label {
     display: none;
   }
+
+  .locations{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .enviro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+   .enviro h2 {
+     grid-column: 1/1
+   }
+
+   .enviro p {
+     grid-column: 1/1
+   }
+
+   .localhoney {
+     padding: 5rem;
+   }
+
+   .funfacts {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+    .funfacts h2 {
+      grid-column: 1/1
+    }
+
+    .funfacts p {
+      grid-column: 1/1
+    }
+
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -319,6 +395,65 @@ div .icons {
     transform: scale(1,1);
   }
 
+  article h3 {
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    background-color: #ec9222;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 1;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .honeycomb h1 {
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oleo Script', cursive;
+    background-color: #ec9222;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 1;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .honeycomb h2 {
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oleo Script', cursive;
+    background-color: #ec9222;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 1;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+  }
+
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -326,4 +461,6 @@ div .icons {
   .donations {
     grid-template-columns: 1fr 1fr;
 }
+
+
 /* navigation styles and  finish here */
