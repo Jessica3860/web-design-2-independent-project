@@ -10,10 +10,31 @@
 
 <body>
 
+  <ul class="skip-links">
+    <li>
+      <a href="#nav">Skip to navigation</a>
+    </li>
+    <li>
+      <a href="#about">Skip to about honey</a>
+    </li>
+    <li>
+      <a href="#locations">Skip to honey locations</a>
+    </li>
+    <li>
+      <a href="#facts">Skip to funfacts about bees</a>
+    </li>
+    <li>
+      <a href="#donations">Skip to donations</a>
+    </li>
+    <li>
+      <a href="#main">Skip to main conntent</a>
+    </li>
+  </ul>
+
   <header role="banner">
     <h1 class="logo"><img src="www/images/logo-main.svg" alt="logo honey stop"></h1>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
+    <nav id="nav" role="navigation">
       <ul>
         <li><a href="index.html">home</a></li>
         <li><a href="locations.html">locations</a></li>
@@ -28,7 +49,7 @@
 
   </header>
 
-  <main role="main">
+  <main id="main" role="main">
     <section class="honeycomb">
       <img src="images/honeycomb.png" alt="honey-comb-pattern">
       <h2>Buy Local Honey</h2>
@@ -36,22 +57,22 @@
 
     <section class="cards">
       <article>
-        <h3>About</h3>
+        <h3 id="about">About</h3>
         <img src="images/jonathan-pielmayer.png" alt="honey jar">
       </article>
 
       <article>
-        <h3>Fun Facts</h3>
+        <h3 id="facts">Fun Facts</h3>
         <img src="images/damien-tupinier.png" alt="beehive">
       </article>
 
       <article>
-        <h3>Locations</h3>
+        <h3 id="locations">Locations</h3>
         <img src="images/monty-allen.png" alt="wooden direction sign">
       </article>
     </section>
 
-    <div class="donations">
+    <div id="donations" class="donations">
       <p>you should donate to bees, bees are important to the environment we need bees, you need bees. without bees you have no morning coffee. how do you expect to function without your morning coffee. donate now, save the bees.</p>
       <a href="#">Donate Now</a>
     </div>
