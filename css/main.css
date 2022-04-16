@@ -40,7 +40,7 @@ body {
 }
 .content {
   height: 1000px;
-  background-color: #fff;
+  background-color: #0C382B;
   display: grid;
   place-items: center;
 }
@@ -113,7 +113,7 @@ nav li {
 }
 
 nav a {
-  color: #0c382b;
+  color: #000;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -152,9 +152,9 @@ nav a:hover {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #fff;
+  color: #0C382B;
   font-family: "Oleo Script", cursive;
-  background-color: #ec9222;
+  background-color: #FFFBC2;
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -172,9 +172,9 @@ nav a:hover {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #fff;
+  color: #0C382B;
   font-family: "Oleo Script", cursive;
-  background-color: #ec9222;
+  background-color: #FFFBC2;
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -201,7 +201,7 @@ article {
   align-items: center;
   border: .2rem solid #fcd732;
   background-color: #fcd732;
-  color: #fff;
+  color: #0C382B;
   text-decoration: none;
   text-align: center;
 
@@ -217,9 +217,9 @@ article h3 {
   grid-column: 1/-1;
   grid-row: 2;
   align-self: center;
-  background-color:#ec9222;
+  background-color:#FFFBC2;
   border: none;
-  color: #fff;
+  color: #0C382B;
   padding: .5rem;
   text-align: center;
   text-decoration: none;
@@ -239,7 +239,7 @@ article h3 {
 .donations a {
   background-color:#ec9222;
   border: none;
-  color: #fffabc;
+  color: #0C382B;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -264,7 +264,7 @@ article h3 {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #fff;
+  color: #0C382B;
   font-family: "Oleo Script", cursive;
   border: none;
   text-decoration: none;
@@ -397,8 +397,8 @@ div .icons {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #fff;
-    background-color: #ec9222;
+    color: #0C382B;
+    background-color: #FFFBC2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -416,9 +416,9 @@ div .icons {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: #0C382B;
     font-family: "Oleo Script", cursive;
-    background-color: #ec9222;
+    background-color: #FFFBC2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -436,9 +436,9 @@ div .icons {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: #0C382B;
     font-family: "Oleo Script", cursive;
-    background-color: #ec9222;
+    background-color: #FFFBC2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -458,6 +458,7 @@ div .icons {
 
   .donations {
     grid-template-columns: 1fr 1fr;
+  }
 }
 
 
