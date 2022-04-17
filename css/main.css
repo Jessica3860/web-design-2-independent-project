@@ -42,8 +42,8 @@ li {
   margin-bottom: 1.5rem;
   flex-direction: row;
 }
-/* header code */
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@400;700&display=swap');
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
