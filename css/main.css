@@ -35,6 +35,10 @@ img {
   top: 0;
 }
 
+.skip-links li {
+  margin: 0;
+}
+
 li {
   display: flex;
   align-items: center;
