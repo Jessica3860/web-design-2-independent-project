@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.5;
-
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -11,8 +11,8 @@ html {
 body {
   margin: 0;
   background: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
   color: #4e4255;
 }
 
@@ -39,51 +39,44 @@ img {
 .skip-links li {
   margin: 0;
 }
-.logo {
-  margin: 0;
+
+.background {
+  background-color: #fcd732;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  flex-direction: row;
-}
-
-body {
-	margin: 0;
-	background: #fff;
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-}
 .content {
   height: 1000px;
-  background-color: #0C382B;
+  background-color: #0c382b;
   display: grid;
   place-items: center;
 }
+
 /* navigation styles start here */
+
 header {
+  position: relative;
   background: #6a916e;
   text-align: center;
   z-index: 999;
   width: 100%;
 }
+
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
+
 .nav-toggle-label {
   position: absolute;
   top: 0;
-  left: 0;
-  margin-left: 1em;
+  right: 0;
+  margin-right: 1em;
   height: 100%;
   display: flex;
   align-items: center;
 }
+
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -94,26 +87,31 @@ header {
   border-radius: 2px;
   position: relative;
 }
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: " ";
   position: absolute;
 }
+
 .nav-toggle-label span::before {
   bottom: 7px;
 }
+
 .nav-toggle-label span::after {
   top: 7px;
 }
+
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px #6a916e;
 }
 
 nav {
   position: absolute;
-  text-align: left;
+  text-align: right;
   top: 100%;
-  left: 0;
+  right: 0;
+  padding-right: 1rem;
   background: #6a916e;
   width: 100%;
   transform: scale(1, 0);
@@ -146,8 +144,9 @@ nav a:hover {
 }
 
 /* ~ looks for any preceeding sibling. */
+
 .nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 .nav-toggle:checked ~ nav a {
@@ -155,8 +154,8 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* banner */
 
-/* banner*/
 .honeycomb {
   display: grid;
   grid-template-rows: 1fr;
@@ -172,9 +171,9 @@ nav a:hover {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #0C382B;
+  color: #0c382b;
   font-family: "Oleo Script", cursive;
-  background-color: #FFFBC2;
+  background-color: #fffbc2;
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -192,9 +191,9 @@ nav a:hover {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #0C382B;
+  color: #0c382b;
   font-family: "Oleo Script", cursive;
-  background-color: #FFFBC2;
+  background-color: #fffbc2;
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -208,18 +207,30 @@ nav a:hover {
 }
 
 /* main */
+
 h3 a {
   text-decoration: none;
-  color: #0C382B;
-
+  color: #0c382b;
 }
 
 h3 a:hover {
   color: #ec9222;
 }
 
+div ul {
+  list-style: square;
+  text-decoration: inherit;
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+div li {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
 
 /* cards */
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -229,25 +240,25 @@ article {
   align-items: center;
   border: .2rem solid #fcd732;
   background-color: #fcd732;
-  color: #0C382B;
+  color: #0c382b;
   text-decoration: none;
   text-align: center;
-
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 article img {
   align-items: center;
   padding: 1rem;
-
 }
 
 article h3 {
   grid-column: 1/-1;
   grid-row: 2;
   align-self: center;
-  background-color:#FFFBC2;
+  background-color: #fffbc2;
   border: none;
-  color: #0C382B;
+  color: #0c382b;
   padding: .5rem;
   text-align: center;
   text-decoration: none;
@@ -257,7 +268,7 @@ article h3 {
   border-radius: .5rem;
 }
 
-/*donations*/
+/* donations */
 
 .donations {
   display: grid;
@@ -265,9 +276,9 @@ article h3 {
 }
 
 .donations a {
-  background-color:#ec9222;
+  background-color: #ec9222;
   border: none;
-  color: #0C382B;
+  color: #0c382b;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -288,15 +299,17 @@ article h3 {
 }
 
 /* locations page coding */
+
 .locations {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .locations h2 {
   font-weight: bold;
   z-index: 1;
   text-align: center;
-  color: #0C382B;
+  color: #0c382b;
   font-family: "Oleo Script", cursive;
   border: none;
   text-decoration: none;
@@ -308,15 +321,12 @@ article h3 {
   justify-self: center;
 }
 
+/* footer style */
 
-/* about page coding */
-
-
-
-/* footer style*/
 footer {
   background: #6a916e;
 }
+
 footer ul {
   margin: 0;
   padding: 0;
@@ -325,10 +335,12 @@ footer ul {
   display: flex;
   justify-content: space-around;
 }
+
 footer li {
   margin-bottom: 1em;
   padding-top: 1rem;
 }
+
 footer a {
   color: #fffabc;
   font-weight: bold;
@@ -336,6 +348,7 @@ footer a {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+
 footer .icons {
   display: flex;
   justify-content: center;
@@ -349,91 +362,89 @@ div .icons {
   margin-bottom: 0;
 }
 
-
 /* footer style end */
+
 .logo {
   height: 6rem;
   width: 12rem;
-  margin-top: .5rem
+  margin: 0;
+  margin-top: .5rem;
 }
 
+@media screen and (min-width: 50em) {
 
-
-
-@media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
 
-  .locations{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .enviro {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-   .enviro h2 {
-     grid-column: 1/1
-   }
 
-   .enviro p {
-     grid-column: 1/1
-   }
+  .enviro h2 {
+    grid-column: 1/1;
+  }
 
-   .localhoney {
-     padding: 5rem;
-   }
+  .enviro p {
+    grid-column: 1/1;
+  }
 
-   .funfacts {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-   }
-    .funfacts h2 {
-      grid-column: 1/1
-    }
+  .localhoney {
+    padding: 5rem;
+  }
 
-    .funfacts p {
-      grid-column: 1/1
-    }
+  .funfacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
+
   .logo {
     grid-column: 2 / 3;
   }
+
   nav {
-    all: unset; /*takes all styling off of the nav */
+    /*all: unset; /*takes all styling off of the nav */
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
+
   nav ul {
     display: flex;
   }
+
   nav li {
     margin-left: 3em;
     margin-bottom: 0;
   }
+
   nav a {
     opacity: 1;
     position: relative;
   }
-   nav a:hover::before {
-    transform: scale(1,1);
-  }
 
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
 
   article h3 {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #0C382B;
-    background-color: #FFFBC2;
+    color: #0c382b;
+    background-color: #fffbc2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -451,9 +462,9 @@ div .icons {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #0C382B;
+    color: #0c382b;
     font-family: "Oleo Script", cursive;
-    background-color: #FFFBC2;
+    background-color: #fffbc2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -471,9 +482,9 @@ div .icons {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    color: #0C382B;
+    color: #0c382b;
     font-family: "Oleo Script", cursive;
-    background-color: #FFFBC2;
+    background-color: #fffbc2;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -494,7 +505,7 @@ div .icons {
   .donations {
     grid-template-columns: 1fr 1fr;
   }
-}
 
+}
 
 /* navigation styles and  finish here */
