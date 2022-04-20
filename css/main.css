@@ -219,6 +219,7 @@ h3 a:hover {
 
 div ul {
   list-style: square;
+  text-align: left;
   text-decoration: inherit;
   text-decoration: none;
   line-height: 2rem;
@@ -414,7 +415,7 @@ div .icons {
   }
 
   nav {
-    /*all: unset; /*takes all styling off of the nav */
+    all: unset; /*takes all styling off of the nav */
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
